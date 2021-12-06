@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/utilies.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>סקירות ומאמרים</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          מיטב דש
+          <span class="text-primary">⛬</span>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">בית</a></li>
+            <li><a href="index.html#about">אודות מיטב דש</a></li>
+            <li><a href="index.html#products">מוצרים נבחרים</a></li>
+            <li><a href="index.html#blog.html">מאמרים</a></li>
+            <li><a href="index.html#contact">צור קשר</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>סקירות ומאמרים</h1>
+      </div>
+    </header>
+
+    <main>
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./img/blog/blog1.jpg" alt="people" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>טראמפ: מה שרואים, זה מה שמקבלים?</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i>
+                נערך על ידי <strong>צבי סטפק</strong>
+              </p>
+              <p>
+                צבי סטפק מנתח את התוכנית הכלכלית של נשיא ארה"ב החדש, דונלד
+                טראמפ, והסיכונים שכרוכים בה: תוכניתו אינה נעצרת בהגדלה ניכרת של
+                תקציבי התשתיות והביטחון, ובהפחתה דרמטית במס החברות; המוקש העיקרי
+                ברפורמות: חומות מכסי הייבוא כתבה ראשונה בסדרה
+              </p>
+              <a href="post.html" class="btn btn-dark"> <i class="fas fa-chevron-left"></i>
+                 קרא עוד...
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-columns flex-reverse">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./img/blog/blog2.jpg" alt="people" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-dark">
+              <h2>כבוד הנשיא, "דילים" במרחב הגיאופוליטי קצת יותר מורכבים</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i>
+                נערך על ידי <strong>צבי סטפק</strong>
+              </p>
+              <p>
+                2017 נפתחה באווירה חיובית בשווקים אבל צפויה להיות תנודתית ■ חלק
+                גדול מאי הוודאות הזו ינבע ממדיניות החוץ של טראמפ: העמימות שלו,
+                ההתכנסות פנימה והיחסים מול סין, רוסיה ואירופה ■ כתבה שנייה בסדרה
+              </p>
+              <a href="#" class="btn btn-light"
+                ><i class="fas fa-chevron-left"></i>
+                קרא עוד...
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="./img/blog/blog3.jpg" alt="people" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2 bg-light">
+              <h2>כבוד הנשיא, "דילים" במרחב הגיאופוליטי קצת יותר מורכבים</h2>
+              <p class="meta">
+                <i class="fas fa-user"></i>
+                נערך על ידי <strong>צבי סטפק</strong>
+              </p>
+              <p>
+                2017 נפתחה באווירה חיובית בשווקים אבל צפויה להיות תנודתית ■ חלק
+                גדול מאי הוודאות הזו ינבע ממדיניות החוץ של טראמפ: העמימות שלו,
+                ההתכנסות פנימה והיחסים מול סין, רוסיה ואירופה ■ כתבה שנייה בסדרה
+              </p>
+              <a href="#" class="btn btn-dark"
+                ><i class="fas fa-chevron-left"></i>
+                קרא עוד...
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <div class="footer bg-dark">
+      <div class="social">
+        <a href="#"> <i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"> <i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"> <i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"> <i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>כל הזכויות שמורות © 2021 | מיטב דש ⛬</p>
+    </div>
+    <script>
+            const navbar = document.getElementById('navbar');
+      const isUserScrolling = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove('top');
+          if (!isUserScrolling) {
+            navbar.style.transform = 'translateY(-70px)';
+          }
+          setTimeout(function () {
+            navbar.style.transform = 'translate(0)';
+          }, 300);
+        } else {
+          navbar.classList.add('top');
+          isUserScrolling = false;
+        }
+      };
+    </script>
+  </body>
+</html>
