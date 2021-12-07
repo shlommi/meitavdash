@@ -321,20 +321,20 @@
         }
       };
        // Smooth Scrolling
-      $('#navbar a, .btn').on('click', function (e) {
-        if (this.hash !== '') {
-          e.preventDefault();
+//       $('#navbar a, .btn').on('click', function (e) {
+//         if (this.hash !== '') {
+//           e.preventDefault();
 
-          const hash = this.hash;
+//           const hash = this.hash;
 
-          $('html, body').animate(
-            {
-              scrollTop:  $(hash).offset().top - $(this).height(),
-            },
-            800
-          );
-        }
-      });
+//           $('html, body').animate(
+//             {
+//               scrollTop:  $(hash).offset().top - $(this).height(),
+//             },
+//             800
+//           );
+//         }
+//       });
     </script>
   </body>
 </html>
