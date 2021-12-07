@@ -320,17 +320,20 @@
           isUserScrolling = false;
         }
       };
+       // Smooth Scrolling
+      $('#navbar a, .btn').on('click', function (e) {
+        if (this.hash !== '') {
+          e.preventDefault();
 
-      function scrollTo(element) {
-        window.scroll({
-          behavior: 'smooth',
-          left: 0,
-          top: element.offsetTop
-        });
-      }
+          const hash = this.hash;
 
-      document.querySelector(".navbar a").addEventListener('click', () => {
-        scrollTo(document.querySelector("section.contact"));
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
       });
     </script>
   </body>
