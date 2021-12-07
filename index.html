@@ -321,18 +321,16 @@
         }
       };
 
-      $('#navbar a, .btn').on('click', function (e) {
-        if (this.hash !== '') {
-          e.preventDefault();
-          const hash = this.hash;
+      function scrollTo(element) {
+        window.scroll({
+          behavior: 'smooth',
+          left: 0,
+          top: element.offsetTop
+        });
+      }
 
-          $('html, body').animate(
-            {
-              scrollTop: $(hash).offset().top - 100,
-            },
-            800
-          );
-        }
+      document.querySelector("#navbar a, .btn").addEventListener('click', () => {
+        scrollTo(document.getElementById("contact"));
       });
     </script>
   </body>
